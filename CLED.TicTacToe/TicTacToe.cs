@@ -13,7 +13,7 @@ namespace CLED.TicTacToe
         public event EventHandler<PlayerSetEventArgs> PlayerSet;
         public event EventHandler<GameEndEventArgs> GameEnd;
 
-        private int _gamesCount;
+        private readonly int _gamesCount;
         public string[,] Grid { get; private set; }
         public TicTacToe(int gamesCount)
         {
